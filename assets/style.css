@@ -1,0 +1,121 @@
+:root {
+    --white: var(--white)
+}
+
+body {
+    background-color: rgb(38, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+header {
+    color: magenta;
+    font-size: 16pt;
+    font-weight: bold; 
+}
+
+.allcards {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header {
+    color: magenta;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-body {
+    color: white;
+    text-align: center;
+    padding: 0 13% 20px 13%;
+}
+
+.backgrad {
+    background-image: linear-gradient(to bottom right, magenta, rgb(248, 138, 156));
+    color: white;
+    border-radius: 5.5px;
+    position:relative; left: 0; top:-35px;
+    height: 190px;
+}
+
+.backgrad2 {
+    background-image: linear-gradient(to bottom right, magenta, rgb(248, 138, 156));
+    color: white;
+    border-radius: 5.5px;
+    position:relative; left: 0; top:-35px;
+    height: 172.5px;
+}
+
+.boxfix {
+    padding: 10px;
+}
+
+.boxtitle {
+    position:relative; left: 0; top:-35px;
+    border: 2px solid white;
+    border-style:solid;
+    border-radius: 5.5px;
+    padding: 4px;
+    background-color: rgb(38, 39, 39);
+}
+
+.flexdesc {
+    position:relative; top:-35px;
+    color: magenta;
+    font-weight: lighter;
+}
+
+section {
+    height: 248.5px;
+    width: 499px;
+    padding: 20px;
+    border: 2px solid gray;
+    border-style: dashed;
+}
+
+.backgrad:hover {
+    color: black;
+    border: 2px solid gold;
+}
+
+.backgrad2:hover {
+    color: black;
+    border: 2px solid gold;
+}
+
+.backgrad:active::after {
+    content: "COPIED";
+    position: relative;
+    left: 5%;
+    bottom: 45%;
+    min-width: 200px;
+    border: 3px gold solid;
+    background-color: blue;
+    padding: 12px;
+    color: gold;
+    font-size: 80%;
+    font-weight: bolder;
+}
+
+.backgrad2:active::after {
+    content: "COPIED";
+    position: relative;
+    left: 5%;
+    bottom: 45%;
+    min-width: 200px;
+    border: 3px gold solid;
+    background-color: blue;
+    padding: 12px;
+    color: gold;
+    font-size: 80%;
+    font-weight: bolder;
+}
+
+.backgrad pre:after {
+    user-select: all;
+}
