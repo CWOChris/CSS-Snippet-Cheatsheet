@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Directory</a>
+                <a class="nav-link" href="index.html">Directory</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="glossary.html">Glossary</a>
@@ -30,7 +30,7 @@
                 <a class="nav-link" href="hypertextmarkup.html">HTML</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="css.html">CSS</a>
+                <a class="nav-link active" href="css.html">CSS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="javascript.html">JavaScript</a>
@@ -49,27 +49,60 @@
                 <div class="card" style="width: 24rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h4 class="card-title">Flexbox Row</h4>
+                        <p class="card-text">Use these three properties to create a flexbox row layout.</p>
+                        <p class="card-text" id="textToCopy"><pre>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+                        </pre></p>
+                        <a href="#" class="btn btn-primary" id="copyButton">Copy Code!</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
+              <div class="card" style="width: 24rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h4 class="card-title">Flexbox Column</h4>
+                      <p class="card-text">Use this to create a flexbox column layout.</p>
+                      <p class="card-text" id="textToCopy1"><pre>
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+                      </pre></p>
+                      <a href="#" class="btn btn-primary" id="copyButton1">Copy Code!</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- START OF CARD TEMPLATE -->
+    <div class="contaier pt-3">
+      <div class="row">
+              <div class="col-4">
                 <div class="card" style="width: 24rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h4 class="card-title">TEMPLATE</h4>
+                        <p class="card-text">USE THIS AS A CARD TEMPLATE</p>
+                        <p class="card-text" id="textToCopy"><pre>
+.EXAMPLE {
+    YOUR CODE GOES HERE;
+}
+                        </pre></p>
+                        <a href="#" class="btn btn-primary" id="copyButton">Copy Code!</a>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
       </div>
-        <!-- end card -->
-
+            <!-- END OF CARD TEMPLATE -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>
